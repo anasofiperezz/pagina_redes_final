@@ -1,3 +1,2 @@
 # redes-digitales-de-datos
-página web qlera
-ya no esta tan qlera la página web :)
+Pagina Final de Redes Digitales 
