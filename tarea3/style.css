@@ -1,0 +1,72 @@
+.estilo1{
+    color:blue;
+    text-align:center;
+    background-color: red;
+}
+.estilo2{
+    color:greenyellow;
+    text-align: center;
+    background-color: yellow;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.estilo3{
+    color:blueviolet;
+    text-align: center;
+    background-color:cadetblue;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.estilo4{
+    color:chocolate;
+    text-align: center;
+    background-color:crimson;
+}
+
+.estilo5{
+    color:hotpink;
+    text-align: center;
+    background-color:brown;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.estilo6{
+    color:lightseagreen;
+    text-align: center;
+    background-color:fuchsia;
+    font-size: 60px;
+    font-family: fantasy;
+}
+
+.estilo7{
+    color:darkred;
+    text-align: center;
+    background-color:aquamarine;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.estilo8{
+    color:blueviolet;
+    text-align: center;
+    background-color:coral;
+    font-size: 87px;
+}
+
+.estilo9{
+    color:darkmagenta;
+    text-align: center;
+    background-color:cornflowerblue;
+    font-size: 55px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.estilo10{
+    color:blueviolet;
+    text-align: center;
+    background-color:crimson;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

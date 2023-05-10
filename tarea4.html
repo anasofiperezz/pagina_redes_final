@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>TAREA 4!</title>
+</head>
+
+<body>
+    <h1 style="text-align: center">TAREA 4</h1>
+    <h3>OSI</h3>
+    <p>
+        El modelo OSI nace como una propuesta de la organización Internacional de Normas (ISO) para estandarizar los
+        protocolos utilizados hasta ese momento, este modelo no es una arquitectura de red, ya que carece de la
+        especificación de los servicios y protocolos exactos a utilizar en cada capa, solo se indica lo que se debe de
+        hacer, sin embargo, la ISO también cuenta con estándares para todas las capas aunque no son parte del modelo en
+        sí. En 1995 nace el modelo de Interconexión de Sistemas Abiertos (OSI). El modelo se divide en siete capas que
+        siguen la siguiente lógica:
+    </p>
+    <ul>
+        <li>Debe haber una capa donde se requiera un nivel diferente de abstracción</li>
+        <li>Cada capa debe realizar únicamente para lo que fue prevista</li>
+        <li>La función de cada capa debe ser elegida tomando en cuenta los protocolos estandarizados internacionalmente
+        </li>
+        <li>Los límites de las capas deben minimizar el flujo de información a través de las interfaces</li>
+        <li>Las capas deben ser autosuficientes para realizar su función y no requerir de la agrupación de funciones
+            adicionales con la finalidad de mantener las capas lo más pequeño posible para evitar que se vuelvan
+            inmanejables.</li>
+    </ul>
+
+    <h3>CAPAS</h3>
+    <ol>
+        <li>Física: Es la capa donde se transmiten los datos bit por bit a través de medios físicos como cables de
+            ethernet o comunicación inalámbrica como WIFI o Bluetooth. Se mandan señales eléctricas u ondas específicas
+            indicando un 1 o 0.</li>
+        <li>Enlace de datos: Maneja la información enviada o recibida en “tramas” las cuales son paquetes de datos más
+            pequeños que los enviados a través de la capa de red. Se encarga del control de flujo y manejo de errores
+            para evitar una trama que contenga información errónea y sea enviada o recibida incorrectamente.</li>
+        <li>Capa de red: Maneja la transferencia de los datos entre los dos dispositivos comunicándose. Si la
+            comunicación es dentro de la misma red, la capa de red no se utiliza. Esta capa maneja la información en
+            unidades llamadas paquetes las cuales son las que se envían a través de la red.</li>
+        <li>Transporte: Esta capa se encarga de decidir si romper un paquete de la capa superior en uno más pequeño si
+            es necesario, determina el tipo de servicio que debe de tener la capa de sesión y determina los usuarios de
+            la red. Aísla toda la información de las capas superiores para que la información agregada y modificada de
+            las siguientes capas no afecte su integridad.</li>
+        <li>Sesión: Esta capa las herramientas necearias para establecer conexión entre diferentes máquinas en este caso
+            explicaremos tres de sus tareas
+            <ul>
+                <li>El control de diálogos, el cual se encarga de llevar el control de quienes transmiten información.
+                </li>
+                <li>El manejo de tokens para evitar que dos partes intenten la misma operación crítica al mismo tiempo.
+                </li>
+                <li>La sincronización que evita la pérdida de información mediante puntos de referencia a lo largo de
+                    las transmisiones para poder reanudar en caso de alguna interrupción</li>
+            </ul>
+        </li>
+        <li>Presentación: Esta capa se enfoca en la sintaxis y semántica de la información transmitida, por lo general
+            se definen estructuras de datos a intercambiar con una codificación estándar, para ello la capa de
+            presentación se encarga del manejo de dichas estructuras y permite definir e intercambiar estructuras más
+            complejas.</li>
+        <li>Aplicación: En esta capa se establecen los protocolos de comunicación utilizados con mayor frecuencia por
+            los usuarios como por ejemplo el protocolo HTTP utilizado a lo largo de toda la web. Estos protocolos se
+            utilizan para transferir archivos, enviar y recibir correos, esparcir noticias, entre otros.</li>
+    </ol>
+    <h3>TCP/IP</h3>
+    <p>
+        Aplicación: En esta capa se establecen los protocolos de comunicación utilizados con mayor frecuencia por los
+        usuarios como por ejemplo el protocolo HTTP utilizado a lo largo de toda la web. Estos protocolos se utilizan
+        para transferir archivos, enviar y recibir correos, esparcir noticias, entre otros.
+    </p>
+
+    <ul>
+        <li>Capa de aplicación
+            <ul>
+                <li>Responsable de la comunicación entre aplicaciones</li>
+            </ul>
+        </li>
+        <li>Capa de transporte
+            <ul>
+                <li>Responsable de la transmisión de datos entre dispositivos y asegura que los datos lleguen
+                    correctamente</li>
+            </ul>
+        </li>
+        <li>Capa de red
+            <ul>
+                <li>Se encarga de enrutar los datos a través de la red hacia su destino</li>
+            </ul>
+        </li>
+        <li>Capa de enlace de datos
+            <ul>
+                <li>Responsable de la transmisión de datos a través de medios físicos como cables o inalámbricos.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Este modelo es utilizado en la mayoría de las redes de computadoras y es esencial para el funcionamiento de
+        internet. Cada capa tiene su propio conjunto de protocolos y estándares que permiten que los dispositivos en la
+        red se comuniquen y compartan datos de manera efectiva.
+    </p>
+
+    <h3>Tabla comparativa</h3>
+
+    <table width='100%' bgcolor='pink' border="black">
+        <tr>
+            <td width='33.3%'></td>
+            <td width='33.3%'>
+                <p style='color: black'>MODELO TCP/IP</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>MODELO OSI</p>
+            </td>
+        </tr>
+    </table>
+    <table width='100%' border="black">
+        <tr>
+            <td width='33.3%'>
+                <p style='color: black'>Se expande a:</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>TCP / IP: Protocolo de control de transmisión /Protocolo de internet</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>OSI – Interconexión de sistema abierto</p>
+            </td>
+        </tr>
+    </table>
+    <table width='100%' border="black">
+        <tr>
+            <td width='33.3%'>
+                <p style='color: black'>Sentido</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>Es un modelo de servidor de cliente utilizado para la transmisión de datos a
+                    través de internet</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>Es un modelo teórico que se utiliza para el sistema informático</p>
+            </td>
+        </tr>
+    </table>
+    <table width='100%' border="black">
+        <tr>
+            <td width='33.3%'>
+                <p style='color: black'>NO. de capas</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>4 capas</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>7 capas</p>
+            </td>
+        </tr>
+    </table>
+    <table width='100%' border="black">
+        <tr>
+            <td width='33.3%'>
+                <p style='color: black'>Desarrollado por:</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>Departamento de Defensa (DoD)</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>ISO (Organización de normas internacionales)</p>
+            </td>
+        </tr>
+    </table>
+    <table width='100%' border="black">
+        <tr>
+            <td width='33.3%'>
+                <p style='color: black'>Tangible</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>SI</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>NO</p>
+            </td>
+        </tr>
+    </table>
+    <table width='100%' border="black">
+        <tr>
+            <td width='33.3%'>
+                <p style='color: black'>Modelo</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>Cliente-servidor</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>Conceptual</p>
+            </td>
+        </tr>
+    </table>
+    <table width='100%' border="black">
+        <tr>
+            <td width='33.3%'>
+                <p style='color: black'>Protocolo</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>Protocolo estándar utilizado para todas las redes, incluida internet)</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>No es un protocolo, sino un modelo de referencia utilizado para comprender y
+                    diseñar la arquitectura del sistema</p>
+            </td>
+        </tr>
+    </table>
+    <table width='100%' border="black">
+        <tr>
+            <td width='33.3%'>
+                <p style='color: black'>Enfoque</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>Vertical</p>
+            </td>
+            <td width='33.3%'>
+                <p style='color: black'>Horizontal</p>
+            </td>
+        </tr>
+    </table>
+    <p>
+        Un ejemplo de aplicación del modelo TCP/IP sería el envío de un correo electrónico utilizando el protocolo SMTP.
+        En este ejemplo, la capa de aplicación se encargaría de la comunicación entre el cliente de correo electrónico y
+        el servidor de correo electrónico. La capa de transporte utilizaría el protocolo TCP para entregar los datos de
+        manera confiable. La capa de red se encargaría del enrutamiento de paquetes a través de la red utilizando el
+        protocolo IP. Y finalmente, la capa de enlace de datos se encargaría de enviar los paquetes a través de la red
+        utilizando el protocolo Ethernet.
+    </p>
+    <p>
+        Por otro lado, en el modelo OSI, un ejemplo de aplicación podría ser el uso del protocolo FTP para transferir
+        archivos. En este caso, la capa de aplicación se encargaría de la comunicación entre el cliente FTP y el
+        servidor FTP. La capa de transporte se encargaría de la entrega de datos utilizando el protocolo TCP. La capa de
+        red se encargaría del enrutamiento de paquetes utilizando el protocolo IP, mientras que la capa de enlace de
+        datos se encargaría de enviar los paquetes a través de la red utilizando el protocolo Ethernet. Además, la capa
+        de sesión en el modelo OSI se encargaría de establecer, mantener y finalizar la sesión entre el cliente FTP y el
+        servidor FTP, una función que no está presente en el modelo TCP/IP.
+    </p>
+    <p>
+        En resumen, aunque ambos modelos sirven para explicar cómo los dispositivos en una red de computadoras se
+        comunican entre sí, el modelo TCP/IP es más utilizado en la actualidad y se enfoca más en la conectividad de
+        redes, mientras que el modelo OSI es más teórico y es utilizado principalmente para propósitos educativos.
+    </p>
+    <h4>
+        <a class="btn secondary" href="teoria.html" type="button">Regresar</a>
+    </h4>
+</body>
+
+</html>
