@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" style="color: hotpink" href="index.html">Inicio</a>
+            <a class="navbar-brand" style="color: pink" href="Proyecto.html">Proyecto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" style="color: white" href="teoria.html"> Teoría</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: white"
+                            href="laboratorio.html">Laboratorio</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: white"
+                            href="https://dashboard-redes-digitales.vercel.app/">Dashboard</a></li>
+                </ul>
+            </div>
+            <span class="navbar-text" style="text-align: right;">
+                IBERO PUEBLA
+            </span>
+        </div>
+    </nav>
+    <!-- Page Content-->
+
+    <section>
+
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-9">
+                    <h1 class="mt-5" style="color: hotpink">PROYECTO FINAL</h1>
+                    <h2 style="color: black">Redes Digitales de Datos</h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <table width="100%">
+        <tr>
+            <td width="10%"></td>
+            <td width="80%">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 style="color: pink;">Problematicas que aborda </h3>
+
+                        <h6>Salud humana:</h6>
+
+                        La contaminación del aire puede tener un impacto significativo en la salud humana, causando o
+                        exacerbando enfermedades respiratorias, cardiovasculares y otras afecciones. Un dispositivo de
+                        monitoreo de la calidad del aire permite medir los niveles de contaminantes y proporcionar
+                        información precisa sobre la calidad del aire en una determinada ubicación.
+                        <br>
+                        <br>
+                        <h6>Cumplimiento normativo:</h6>
+
+                        Los gobiernos y las autoridades ambientales establecen regulaciones y estándares para controlar
+                        y reducir la contaminación atmosférica. Los dispositivos de monitoreo de la calidad del aire
+                        permiten medir y evaluar los niveles de contaminantes, lo que es fundamental para garantizar el
+                        cumplimiento de las normativas ambientales.
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 style="color: pink;">Sensores Seleccionados</h3>
+
+                        <h6>
+                            • DHT11 (Sensor de Temperatura, Sensor de Humedad)
+                            <br>
+                            <br>
+                            • MQ Sensor (Sensor de calidad de aire)
+                            <br>
+                            <br>
+                            • PH4502C (sensor de PH)
+                            <br>
+                            <br>
+                            • CJMCU811 (Sensor de CO2 y O2)
+                        </h6>
+
+                    </div>
+            </td>
+            <td width="10%"></td>
+        </tr>
+    </table>
+    &nbsp;
+    <table width="100%">
+        <tr>
+            <td width="10%"></td>
+            <td width="80%">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 style="color: pink;">Usuario final </h3>
+                        El usuario final de un sistema de monitoreo de la calidad del aire puede variar dependiendo del
+                        contexto y el propósito del sistema.Algunos posibles usuarios finales podrían incluir:
+                        <br>
+                        <br>
+                        -Autoridades Gubernamentales
+                        <br>
+                        -Organizaciones de la salud
+                        <br>
+                        -Industrias y empresas
+                        <br>
+                        -Instituciones educativas y de investigación
+                        <br>
+                        -Ciudadanos y comunidades
+                        <br>
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h3 style="color: pink;">Informacion Medida</h3>
+
+                        La calidad del aire se evalúa mediante la medición de diferentes compuestos atmosféricos
+                        considerados como contaminantes criterio, entre ellos se encuentra el monóxido de carbono (CO),
+                        el dióxido de azufre (SO2 ), los óxidos de nitrógeno (NOx), las partículas suspendidas totales
+                        (PST), fracciones gruesa (PM10) y fina (PM2.5), el plomo y el ozono. La concentración de
+                        contaminantes secundarios (p.e. el ozono, el formaldehído y el glioxal) a nivel del suelo
+                        dependen de sus precursores como lo son los NOx, los compuestos orgánicos volátiles (COV), la
+                        radiación luminosa, condiciones meteorológicas y la topografía.
+                        <br>
+                        Debido a esto se seleccionaron sensores de O2 que nos van a decir cuanto porcentaje de oxigeno
+                        habrá dentro del espacio, aunado a esto también implementamos uno de CO2 ya que las condiciones
+                        del aire optimas nos piden que exista un porcentaje dentro de este espacio, otro indicador
+                        importante es la temperatura ya que hay una relación directa entre el aumento de CO2 y la
+                        temperatura, el PH lo seleccionamos debido a que si hay compuestos ajenos o demasiados
+                        contaminantes afecta directamente al PH del aire ya que puede ser indicador de contaminación
+                        ambiental.
+
+                    </div>
+            </td>
+            <td width="10%"></td>
+        </tr>
+    </table>
+    &nbsp;
+    <table width="100%">
+        <tr>
+            <td width="10%"></td>
+            <td width="80%">
+                <div class="row">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <h3 style="color: pink;">Arquitectura de red</h3>
+                            <img src="redd.ppm" width="440" height="350">
+
+                        </div>
+                        <div class="col-sm-6">
+                            <h3 style="color: pink;">Evidencias</h3>
+
+                            <h4>Sensor CO2</h4>
+                            <video width="440" height="160" controls>
+                                <source src="CO2.mp4" type="video/mp4">
+                            </video>
+                            <br>
+
+                            <video width="440" height="160" controls>
+                                <source src="Temperatura.mp4" type="video/mp4">
+                            </video>
+            </td>
+            <td width="10%"></td>
+        </tr>
+    </table>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
